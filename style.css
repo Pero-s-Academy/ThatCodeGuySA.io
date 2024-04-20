@@ -1,0 +1,262 @@
+/* Navbar CSS */
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav {
+    background-color: #333;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-menu img {
+    width: 40px;
+    height: auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.left-menu a:hover {
+    background-color: transparent;
+}
+
+.left-menu a:hover img {
+    opacity: 1;
+}
+
+.left-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.right-menu {
+    margin-right: 20px;
+}
+
+.left-menu li,
+.right-menu li {
+    margin-right: 20px;
+    margin-left: 12px;
+}
+
+li {
+    margin-right: 20px;
+}
+
+.navbar-center {
+    text-align: center;
+    display: flex;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-left: -105px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    padding: 20px;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.about-me h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-me img {
+    width: 22%;
+    height: auto;
+    margin-left: auto;
+    border-radius: 5px;
+}
+
+
+.about-me p {
+    flex: 1 1 auto;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* CSS for slideshow container */
+.slideshow-container {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 4%;
+    position: relative;
+}
+
+/* CSS for images in the slideshow */
+.mySlides img {
+    max-width: 200px;
+    height: auto;
+    padding-left: 10%;
+}
+
+/* CSS for images in the slideshow */
+.mySlides {
+    display: none;
+}
+
+/* CSS for header and paragraph */
+.content {
+    width: calc(60% - 10px);
+    float: right;
+}
+
+/* CSS for next and previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: -1%;
+}
+
+.next {
+    right: -10%;
+    border-radius: 3px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    .mySlides {
+        flex-direction: column;
+    }
+
+    .content {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p,
+.footer nav {
+    margin: 0 auto;
+    width: fit-content;
+    padding: 0;
+}
+
+.footer nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    list-style: none;
+}
+
+.footer nav ul.links {
+    justify-content: center;
+}
+
+.footer nav ul li {
+    margin: 0 10px;
+    list-style: none;
+    display: inline-block;
+}
+
+.footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
